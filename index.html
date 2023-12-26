@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        #myVideo {
+          height: 1080px;
+          width: 1920px;
+          position: fixed;
+        }
+        
+        .content {
+          position: fixed;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        .admin_sign{
+            text-align: center;
+        }
+        #createaccount{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #createaccount:hover{
+            color: tomato;
+        }
+        #brandName{
+            right: 290px;
+            left: auto;
+            position: absolute;
+            color: white;
+            top: 39px;
+            transform: translate(-142%, -50%);
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        </style>
+        </head>
+        <body>
+        <video autoplay muted loop id="myVideo">
+          <source src="dist/images/marvel.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <h1 id="brandName">Big Cinemas</h1>
+        <div class="content">
+          <h1 class="admin_sign">Sign in</h1>
+              <form action="seatbooking.html" method="post">
+              <div class="row form-group">
+                      <div class="col-sm-4"></div>
+                    <div class="col-sm-4"><input type="email" class="form-control" id="email" placeholder="example@gmail.com" required></div>
+                    <div class="col-sm-4"></div>
+              </div>
+              <div class="row form-group">
+                   <div class="col-sm-4"></div>
+                   <div class="col-sm-4"><input type="password" class="form-control" id="pwd" placeholder="****" required></div>
+                   <div class="col-sm-4"></div>
+              </div>
+                <div class="row text-center"><button type="submit" class="btn btn-primary">Sign in</button></div>
+                <hr style="border: 1px solid grey;" width="30%">
+                <div class="text-center" >
+                <a id="createaccount" href="Signup.html">Create New Account</a>        
+                </div>
+              </form>
+        </div>
+        </body>
+</html>
