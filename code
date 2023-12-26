@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>index 2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        #signupbg{
+            background-color: wheat;
+            padding:20px;
+            border-radius: 10px;
+            border: none;
+            box-shadow:0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 10%)
+        }
+        body{
+            background-image: url(dist/images/img3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1 class="text-center" style="color: white;"><b>Sign up</b></h1>
+            <div class="col-sm-4"></div>
+            <div  class="col-sm-4" id="signupbg">
+                <form action="index.html"  method="POST">
+                    <div class="row form-group">
+                        <div class="col-sm-6">
+                            <label for="fname">First Name:</label>
+                            <input id="fname" type="text" class="form-control" name="fname" placeholder="First Name" required>
+                                                       
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lname">Last Name:</label>
+                            <input id="lname" type="text" class="form-control" name="lname" placeholder="Last Name" required> 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Username:</label><input id="email" type="text" class="form-control" name="email" placeholder="someone@example.com" required>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password:</label><input id="Password" type="password" class="form-control" name="Password" placeholder="Password" required>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="cpwd">Confirm Password:</label><input id="cpwd" type="password" class="form-control" name="cpwd" placeholder="Confirm Password" required>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number:</label>
+                        <input id="phone" type="tel" name="phone" class="form-control" placeholder="Mobile number" required>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn btn-success">Sign up</button>                   
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </body>
+</html>
