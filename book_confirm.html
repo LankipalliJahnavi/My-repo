@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seatbooking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        #brandname{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #footer{
+            width: 100%;
+            height: 220px;
+            background-color: black;
+        }
+        .footerhead{
+            color: rgb(226, 216, 216);
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        #footer ul{
+            list-style: none;
+            margin:0px;
+            padding:0px;
+        }
+        #footer ul li a{
+            color: darkgrey;
+            text-decoration: none;
+            line-height: 2em;
+        }
+        #footer ul li a:hover{
+            color: white;
+            text-decoration: none;
+        }
+        #add{
+            color: darkgrey;
+        }
+        .glyphicon-ok{
+            color: green;
+        }
+    </style>
+    <body>
+        <nav class="navbar-inverse">
+            <div class="container-fluid">
+                <div id="brandname" class="navbar-header">
+                    <a class="navbar-brand" href="">Big Cinemas</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Buzz</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <a href=""><span class="glyphicon glyphicon-search"></span></a>
+                </form>
+            </div>
+        </nav>
+        <!----sec-->
+            <h3 style="text-align: center;">Fill the details</h3>
+            <hr>
+            <div class="container">
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option value="">Num of Tickets</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                    </select>
+                </div>
+                <div class="col-sm-3 form-group">
+                    <select class="form-control">
+                        <option value="">Select Theater</option>
+                        <option value="">PVR Mall</option>
+                        <option value="">Square Screen X</option>
+                        <option value="">V talkies</option>
+                        <option value="">Marvel IMAX</option>
+                        <option value="">DC IMAX</option>
+                        <option value="">The Forum Vijaya Mall</option>
+                        <option value="">Sathyam Cinemas</option>
+                        <option value="">I Dreams</option>
+                        <option value="">AGS Cinemas</option>
+                        <option value="">V Epiq Cinema</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control">
+                        <option value="">Timing</option>
+                        <option value="">10:00 AM</option>
+                        <option value="">02:00 PM</option>
+                        <option value="">06:30 PM</option>
+                        <option value="">09:45 PM</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-4">
+                        <select class="form-control">
+                        <option value="">Day</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                    </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="form-control">
+                        <option value="">Month</option>
+                        <option value="">Jan</option>
+                        <option value="">Feb</option>
+                        <option value="">Mar</option>
+                        <option value="">Apr</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">Aug</option>
+                        <option value="">Sep</option>
+                        <option value="">Oct</option>
+                    </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="form-control">
+                        <option value="">Year</option>
+                        <option value="">2023</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="container">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h2 class="text-center" style="background-color: #4388cc;color:white;">Screen</h2>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        <br>
+            <div class="col-sm-12 text-center">
+                <div class="container">
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Booking Confirmation</button>
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h3 class="text-center"><span class="glyphicon glyphicon-ok"></span> Successfully Booked Your Tickets</h3>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="seatbooking.html"><button type="button" class="btn btn-success">Done</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <hr>
+        <!----footer-->
+        <hr>
+        <div id="footer">
+            <div class="container">
+                <div class="col-sm-3">
+                    <h3 class="footerhead">Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms and Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="footerhead">Sites</h3>
+                    <ul>
+                        <li><a href="#">Online booking-Banglore</a></li>
+                        <li><a href="#">Online booking-Chennai</a></li>
+                        <li><a href="#">Online booking-Kolkata</a></li>
+                        <li><a href="#">Online booking-Hyderabad</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="footerhead">Contact us</h3>
+                    <ul>
+                        <li><a href="#">+91 9191919999</a></li>
+                        <li><a href="#">180-109-109-110</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                        <h3 class="footerhead">Address</h3>
+                        <p id="add"> #111-12/B ABCD street Antartica. </p>
+                        <p id="add"> #321-54/A WXYZ street JAVA. </p>
+                </div>
+            </div>
+            <br>
+            <div>
+                <p style="text-align: center; color: white">&copy; 2021 Copyright <strong>bookfromhome</strong>.All rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</html>
